@@ -13,6 +13,3 @@ jobs:
         with:
            version: 1.9.5
 
-      - name: Terraforn init
-        run: terraform init
-             
