@@ -14,5 +14,5 @@ jobs:
            version: 1.9.5
 
       - name: Terraform init
-         run: terraform init     
+        run: terraform init     
 
