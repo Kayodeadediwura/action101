@@ -5,4 +5,4 @@ jobs:
 creating_an-Ec2-machine:
 runs-on: ubuntu-latest
 steps:
-- run: pipelines that automates deployment of an Ec2 machine
+- run: echo "pipelines that automates deployment of an Ec2 machine"
