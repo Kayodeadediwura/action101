@@ -1,6 +1,6 @@
 #Create Security Group for Frontend Node 1  EC2 Instances
 
-resource "aws_security_group" "" {
+resource "aws_security_group" {
   name = "allow_ssh"
   # ... other configuration ...
   egress {
@@ -18,3 +18,5 @@ resource "aws_security_group" "" {
     cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = ["::/0"]
   }
+}
+

@@ -2,7 +2,7 @@ name: Primoris Git Action
 run-name: Primoris Git Action
 on: [push]
 jobs:
-creating_an-Ec2-machine:
-runs-on: ubuntu-latest
-steps:
-- run: echo "pipelines that automates deployment of an Ec2 machine"
+  creating_an-Ec2-machine:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "pipelines that automates deployment of an Ec2 machine"
