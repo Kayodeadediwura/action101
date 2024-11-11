@@ -7,4 +7,12 @@ jobs:
    steps:
       - name: checkout code from repo
         uses: actions/checkout@v4
-      - run : ls
+      
+      - name: Setup Terraform to implement cloud infrastructure
+        uses: hashicorp/setup-terraform@v2
+        with:
+           version: 1.9.5
+
+      - name: Terraforn init
+        run: terraform init
+             
