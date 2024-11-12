@@ -17,7 +17,7 @@ jobs:
       - name: Setup Terraform to implement cloud infrastructure
         uses: hashicorp/setup-terraform@v2
         with:
-           version: 1.9.5
+           version: 1.3.0
 
       - name: Terraform init
         run: terraform init  
