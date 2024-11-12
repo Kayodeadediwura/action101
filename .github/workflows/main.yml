@@ -22,6 +22,6 @@ jobs:
       - name: Terraform init
         run: terraform init  
 
-      - name: Terraform plan -var-file
-        run: terraform plan -var-file     
+      - name: Terraform plan 
+        run: terraform plan      
 
