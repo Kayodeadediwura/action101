@@ -2,15 +2,15 @@ resource "aws_instance" "node_1" {
   ami                    = "ami-02f617729751b375a"
   instance_type          = "tc2 micro"
   key_name               = "kokoro101"
-  vpc_security_group_ids = [aws_security_group.project.id]
+  vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
   tags = {
     Name = "node_1"
   }
 }
 
-resource "aws_security_group" "project" {
-    name = "project"
+resource "aws_security_group" "allow_ssh" {
+    name = "allow_ssh"
     # ... other configuration ...
   egress {
     from_port        = 0
