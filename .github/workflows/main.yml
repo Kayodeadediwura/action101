@@ -9,6 +9,7 @@ AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 jobs:
   creating_an-Ec2-machine:
    runs-on: ubuntu-latest
+   
    steps:
       - name: checkout code from repo
         uses: actions/checkout@v4
