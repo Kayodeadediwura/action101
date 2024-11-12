@@ -2,7 +2,7 @@ resource "aws_instance" "node_1" {
   ami                    = "ami-02f617729751b375a"
   instance_type          = "tc2 micro"
   key_name               = "kokoro101"
-  vpc_id                 = "00de41b8a9cb1e85d"
+  vpc_id                 = "vpc-00de41b8a9cb1e85d"
 
   tags = {
     Name = "node_1"
