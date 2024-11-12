@@ -10,6 +10,8 @@ resource "aws_instance" "node_1" {
 }
 
 resource "aws_security_group" "project" {
+    name = "project"
+    # ... other configuration ...
   egress {
     from_port        = 0
     to_port          = 0
