@@ -1,6 +1,6 @@
 resource "aws_instance" "node_1" {
   ami           = "ami-02f617729751b375a"
-  instance_type = "tc2.micro"
+  instance_type = "t2.micro"
   key_name      = "kokoro101"
 
 
