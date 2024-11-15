@@ -10,8 +10,8 @@ resource "aws_instance" "node_1" {
   }
 }
 
-resource "aws_security_group" "project" {
-  name   = "project"
+resource "aws_security_group" "project101" {
+  name   = "project101"
   vpc_id = "vpc-00de41b8a9cb1e85d"
   egress {
     from_port        = 0
