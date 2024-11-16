@@ -10,7 +10,7 @@ resource "aws_instance" "node_1" {
   }
 }
 
-resource "aws_security_group" "project101" {
+resource "aws_security_group" "project1011" {
   name   = "project1011"
   vpc_id = "vpc-054a1439864bf9be6"
   egress {
