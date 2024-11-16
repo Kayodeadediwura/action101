@@ -3,15 +3,15 @@ resource "aws_instance" "node_1" {
   instance_type = "t2.micro"
   key_name      = "kokoro101"
 
-  security_groups = [aws_security_group.project1011.name]
+  security_groups = [aws_security_group.project10011.name]
 
   tags = {
     Name = "node_1"
   }
 }
 
-resource "aws_security_group" "project1011" {
-  name   = "project1011"
+resource "aws_security_group" "project10011" {
+  name   = "project10111"
   vpc_id = "vpc-054a1439864bf9be6"
   egress {
     from_port        = 0
