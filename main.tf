@@ -3,7 +3,7 @@ resource "aws_instance" "node_1" {
   instance_type = "t2.micro"
   key_name      = "kokoro101"
 
-  security_groups = [aws_security_group.project101.name]
+  security_groups = [aws_security_group.project1101.name]
 
   tags = {
     Name = "node_1"
