@@ -1,9 +1,9 @@
 resource "aws_instance" "node_1" {
-  ami           = "ami-02f617729751b375a"
+  ami           = "ami-0fcc0bef51bad3cb2"
   instance_type = "t2.micro"
   key_name      = "kokoro101"
 
-
+  security_groups = [aws_security_group.project101.name]
 
   tags = {
     Name = "node_1"
@@ -11,8 +11,8 @@ resource "aws_instance" "node_1" {
 }
 
 resource "aws_security_group" "project101" {
-  name   = "project101"
-  vpc_id = "vpc-00de41b8a9cb1e85d"
+  name   = "project1011"
+  vpc_id = "vpc-054a1439864bf9be6"
   egress {
     from_port        = 0
     to_port          = 0
