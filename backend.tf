@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "primoris-terraform-store2"
-    key    = "env/action/terraform.tfstate"
+    bucket = "primoris-terraform-store"
+    key    = "action/dev/terraform.tfstate"
     region = "eu-west-1"
   }
 }
