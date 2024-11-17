@@ -1,4 +1,4 @@
-resource "aws_instance" "node_1" {
+resource "aws_instance" "node_101" {
   ami           = "ami-0fcc0bef51bad3cb2"
   instance_type = "t2.micro"
   key_name      = "kokoro101"
@@ -6,7 +6,7 @@ resource "aws_instance" "node_1" {
   security_groups = [aws_security_group.project10011.name]
 
   tags = {
-    Name = "node_1"
+    Name = "node_101"
   }
 }
 
